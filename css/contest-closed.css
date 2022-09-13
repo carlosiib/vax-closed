@@ -1,0 +1,176 @@
+:root{
+  --max-sm-w-img-container: 300px;
+  --max-md-w-img-container: 500px;
+  --max-lg-w-img-container: 920px;
+}
+
+/*NAVBAR*/
+.navbar{
+  margin-bottom:0px;
+}
+
+/* CLOSED IMG */
+.challenge-logo img{
+  width: 250px;
+}
+
+/* VAX CHALLENGE LOGO IMG */
+.challenge-logo-heading{
+  padding-block: 2rem;
+  overflow:hidden;
+}
+
+.challenge-logo-heading img{
+  width: var(--max-sm-w-img-container)
+}
+
+/* HEADING TEXT */
+.section-top-heading{
+  color: #000000;
+  font-weight:bold;
+  margin-inline:auto;
+  width: var(--max-sm-w-img-container);
+}
+
+.section-top-heading p:first-child{
+  margin-bottom:0;
+  font-size:3rem;
+}
+
+.section-top-heading p:last-child{
+  font-weight: 900;
+  font-size:3.6rem;
+}
+
+/* WINNERS SECTION */
+.winners-container{
+   width: var(--max-sm-w-img-container);
+   padding-bottom:3rem;
+   margin-inline: auto;
+   display:flex;
+   flex-direction: column;;
+   gap:2rem;
+}
+
+.winner-item-container{
+  overflow:hidden;
+}
+
+.winner-video{
+  width:100%;
+  /* height:200px; */
+  /* background-color: #000000; */
+}
+
+.video_container {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  width:100%;
+}
+
+.winner-name{
+  font-weight: bold;
+}
+
+/* FOOTER */
+.footer-items-container{
+  padding-left:0;
+  display:flex;
+  flex-direction:column;
+  gap:2rem;
+}
+
+.footer-items-container li{ 
+  word-break:break-word;
+}
+
+@media only screen and (min-width: 640px) {
+  .challenge-logo img{
+    width: 450px;
+  }
+
+  .challenge-logo-heading img{
+    width: var(--max-md-w-img-container)
+  }
+
+  .section-top-heading{
+   width: calc(var(--max-md-w-img-container) + 100)
+  }
+  
+  .section-top-heading p:first-child{
+   font-size:4rem;
+  }
+
+  .section-top-heading p:last-child{
+   font-size:4.6rem;
+  }
+
+  .winners-container{  
+    width:calc(var(--max-md-w-img-container) + 100px);
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content: center;
+    padding-bottom:6rem;
+  }
+
+  .winner-item-container{
+    width: 45%;
+    overflow: initial;
+  }
+
+  .winner-item{
+    position: relative;
+  }
+
+  .winner-item-ribbon{
+    position: relative;
+    left:-75px;
+    bottom:-15px;
+  }
+
+  .winner-video{
+    position:relative;
+    z-index:10;
+  }
+
+  .footer-items-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+}
+
+@media only screen and (min-width: 1536px) {
+  .challenge-logo img{
+    width: auto;
+  }
+
+  .challenge-logo-heading{
+  padding-block: 3.2rem;
+  }
+
+  .challenge-logo-heading img{
+    width: var(--max-lg-w-img-container);
+  }
+
+  .section-top-heading{
+   width: var(--max-lg-w-img-container);
+  }
+
+  .section-top-heading p:first-child{
+   font-size:4.2rem;
+  }
+
+  .section-top-heading p:last-child{
+   font-size:9rem;
+  } 
+
+  .winners-container{
+  width: var(--max-lg-w-img-container);
+  flex-direction:row;
+  flex-wrap:wrap;
+  gap:4rem;
+ }
+
+}
