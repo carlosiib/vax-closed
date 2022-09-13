@@ -1,7 +1,11 @@
 body {
-    background-image: url(../assets/closed-contest-bg.png);
-  background-size:cover;
+  background-image: url(../assets/closed-contest-bg.png);
+
+  /*PARALLAX EFFECT*/
+  background-attachment: fixed;
   background-repeat: no-repeat;
+  background-size: cover;
+
   /* background-image: url(../assets/closed-contest-bg.png);
   background-size:300px; */
 
