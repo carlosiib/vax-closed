@@ -68,6 +68,16 @@
   width:100%;
 }
 
+.video_container video{
+  height:100%;
+}
+
+.internal_video{
+  height:150px;
+  padding-bottom: 0;
+ }
+
+
 .winner-name{
   font-weight: bold;
 }
@@ -134,6 +144,10 @@
     z-index:10;
   }
 
+  .internal_video {
+    height: 150px;
+}
+
   .footer-items-container {
     flex-direction: row;
     flex-wrap: wrap;
@@ -168,10 +182,18 @@
   } 
 
   .winners-container{
-  width: var(--max-lg-w-img-container);
+  width: calc(var(--max-lg-w-img-container) + 150px);
   flex-direction:row;
   flex-wrap:wrap;
-  gap:4rem;
+  gap:2rem;
+ }
+
+ .winner-item-container{
+    width: 49%;
+  }
+
+ .internal_video{
+  height:294px;
  }
 
  .footer-items-container li{ 
